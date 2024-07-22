@@ -1,0 +1,151 @@
+.ollie-intro {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.background-container {
+    position: absolute;
+    bottom: 88px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.intro-background {
+    width: 100%;
+    height: auto;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.ari-figur-o {
+    width: 372px;
+    height: 454px;
+    position: absolute;
+    top: 61%;
+    left: 75%;
+    transform: translateX(0);
+    z-index: 3;
+    cursor: pointer;
+    animation: float 1s ease-in-out infinite;
+}
+
+.leo-figur-o {
+    width: 373px;
+    height: 441px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translateX(-50%);
+    z-index: 3;
+    cursor: pointer;
+    animation: float 1s ease-in-out infinite;
+}
+
+.ollie-figur-o {
+    width: 454px;
+    height: 470px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(0);
+    z-index: 5;
+    cursor: pointer;
+    animation: float 1s ease-in-out infinite;
+}
+
+.left-button {
+    width: 373px;
+    height: 441px;
+    position: absolute;
+    top: 58%;
+    left: 22%;
+    transform: translateX(-50%);
+    z-index: 4;
+    cursor: pointer;
+
+}
+
+.right-button {
+    width: 373px;
+    height: 441px;
+    position: absolute;
+    top: 58%;
+    right: -38%;
+    transform: translateX(-50%);
+    z-index: 4;
+    cursor: pointer;
+
+}
+
+
+.leo-video {
+    width: 1080px;
+    height: 1080px;
+}
+
+.intro-text {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.floating-button-o {
+    width: 600px;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    margin-top: -370px;
+    background-color: #0369AF;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 68px;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+    font-family: Quicksand;
+    font: bold;
+}
+
+.exit-button-o {
+    width: 600px;
+    height: 130px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    margin-top: -200px;
+    background-color: #FFFFFF;
+    color: #0369AF;
+    border: none;
+    border-radius: 100px;
+    font-size: 68px;
+    cursor: pointer;
+    font-family: Quicksand;
+    font: bold;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}

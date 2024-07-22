@@ -1,0 +1,91 @@
+.drag-drop-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+}
+
+.background-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #EE7F6E;
+    z-index: 1;
+}
+
+.items-container {
+    position: absolute;
+    top: 1550px; /* 调整这个值以控制水果图片的垂直位置 */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    gap: 10px;
+}
+
+.food-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.grid-container {
+    margin-top: 720px; /* 确保有足够的间隙 */
+    z-index: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 120px); /* 更窄的列 */
+    grid-template-rows: repeat(3, 100px); /* 更窄的行 */
+    gap: 10px;
+}
+
+.grid-cell {
+    width: 120px; /* 更窄的单元格宽度 */
+    height: 100px; /* 更窄的单元格高度 */
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    opacity: 1; /* 设置透明度 */
+    left: 40%;
+}
+
+.complete-game-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0369AF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.complete-game-button:hover {
+    background-color: #d75b5b;
+}

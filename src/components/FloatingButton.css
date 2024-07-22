@@ -1,35 +1,39 @@
-/* src/FloatingButton.css */
 .screen {
     width: 1080px;
     height: 1920px;
-    background-color: #E1F7FF; /* 可以根据需要更改背景颜色 */
+    background-color: #E1F7FF;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    overflow: hidden; /* 防止按钮超出屏幕范围 */
+    overflow: hidden;
+    z-index: 0;
 }
 
-.floating-button {
+.floating-button-home {
     width: 600px;
-    height: 200px;
+    height: 160px;
     position: absolute;
     left: 50%;
-    top: 85%; /* 1640px / 1920px = 85% */
-    transform: translate(-50%, -50%);
-    background-color: #007bff;
+    top: 80% !important;
+    transform: translateX(-50%) !important;
+    background-color: #0369AF;
     color: white;
     border: none;
-    border-radius: 10px;
-    font-size: 24px;
+    border-radius: 100px;
+    font-size: 68px;
     cursor: pointer;
     animation: float 3s ease-in-out infinite;
     font-family: Quicksand;
-    font: bold;
+    font-weight: bold;
+    z-index: 1;
 }
 
 @keyframes float {
     0%, 100% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translateX(-50%) translateY(0) scale(1);
     }
     50% {
-        transform: translate(-50%, -50%) scale(1.1);
+        transform: translateX(-50%) translateY(-10px) scale(1.1);
     }
 }
