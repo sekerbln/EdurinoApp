@@ -1,0 +1,86 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './SelectFigur.css';
+import background from '../assets/SelectFigur.png';
+import leftButtonS from '../assets/leftButton.png';
+import ollieSelectImage from '../assets/OllieSelect.png';
+import leoSelectImage from "../assets/LeoSelect.png";
+import ariSelectImage from "../assets/AriSelect.png";
+import alexSelectImage from '../assets/AlexSelect.png';
+import asaSelectImage from "../assets/AsaSelect.png";
+import jukiSelectImage from "../assets/JukiSelect.png";
+
+const SelectFigur = () => {
+                            const navigate = useNavigate();
+
+                            const handleLeftButtonClick = () => {
+                        navigate('/leo-intro');
+                        };
+
+                            const handleClick = () => {
+                        navigate('/leo-intro');
+                        };
+
+                            const ollieHandleClick = () => {
+                        navigate('/ollie-game');
+                        };
+
+                            const ariHandleClick = () => {
+                        navigate('/ari-game');
+                        };
+
+                            const leoHandleClick = () => {
+                        navigate('/leo-game');
+                        };
+
+                            const alexHandleClick = () => {
+                        navigate('/leo-intro');
+                        };
+
+                            const asaHandleClick = () => {
+                        navigate('/leo-intro');
+                        };
+
+                            const jukiHandleClick = () => {
+                        navigate('/leo-intro');
+                        };
+
+
+                            return (
+
+
+                            <div className="screen" style={{ backgroundImage: `url(${background})` }}>
+
+                        <div className="left-button-s" onClick={handleLeftButtonClick}>
+                        <img src={leftButtonS} alt="Left Button" />
+    </div>
+
+    <div className="ollie-select" onClick={ollieHandleClick}>
+                        <img src={ollieSelectImage} alt="Ollie Select" />
+    </div>
+
+    <div className="leo-select" onClick={leoHandleClick}>
+                        <img src={leoSelectImage} alt="Leo Select" />
+    </div>
+
+    <div className="ari-select" onClick={ariHandleClick}>
+                        <img src={ariSelectImage} alt="Ari Select" />
+    </div>
+
+    <div className="alex-select" onClick={alexHandleClick}>
+                        <img src={alexSelectImage} alt="Alex Select" />
+    </div>
+
+    <div className="asa-select" onClick={asaHandleClick}>
+                        <img src={asaSelectImage} alt="Asa Select" />
+    </div>
+
+    <div className="juki-select" onClick={jukiHandleClick}>
+                        <img src={jukiSelectImage} alt="Juki Select" />
+    </div>
+
+    </div>
+                        );
+                        };
+
+export default SelectFigur;

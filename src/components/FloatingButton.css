@@ -1,0 +1,35 @@
+/* src/FloatingButton.css */
+.screen {
+    width: 1080px;
+    height: 1920px;
+    background-color: #E1F7FF; /* 可以根据需要更改背景颜色 */
+    position: relative;
+    overflow: hidden; /* 防止按钮超出屏幕范围 */
+}
+
+.floating-button {
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 85%; /* 1640px / 1920px = 85% */
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+    font-family: Quicksand;
+    font: bold;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
